@@ -34,12 +34,12 @@ const Navbar = () => {
             >
               Projects
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection("certificates")}
               className="text-slate-700 dark:text-slate-300 cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
             >
               Certificates
-            </button>
+            </button> */}
             <button
               onClick={() => scrollToSection("contact")}
               className="text-slate-700 dark:text-slate-300 cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
@@ -51,7 +51,7 @@ const Navbar = () => {
             <ThemeToggle />
             <Button
               onClick={() => scrollToSection("contact")}
-              className="md:hidden"
+              className="md:hidden cursor-pointer"
               size="sm"
             >
               Contact

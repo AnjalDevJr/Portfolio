@@ -5,7 +5,6 @@ import { Code, Palette, Smartphone, Globe } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useScrollAnimation } from "@/app/hooks/use-scroll-animation";
-useScrollAnimation;
 
 const About = () => {
   function AnimatedSection({
@@ -37,7 +36,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-16 px-4 sm:px-6 lg:px-8 bg-white/30 dark:bg-black/30 backdrop-blur-sm"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-white/30 dark:bg-black/30 backdrop-blur-sm"
     >
       <div className="max-w-7xl mx-auto">
         <AnimatedSection className="text-center mb-16">
