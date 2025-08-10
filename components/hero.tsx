@@ -67,13 +67,15 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
+                asChild
                 variant="outline"
                 size="lg"
                 className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent cursor-pointer"
-                onClick={() => window.open("/resume.pdf", "_blank")}
               >
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
               </Button>
             </div>
             <div className="flex space-x-4">
