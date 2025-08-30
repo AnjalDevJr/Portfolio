@@ -69,12 +69,13 @@ const Contact = () => {
       e.preventDefault();
       console.log("Form submitted:", formData);
       sendEmail(formData.email, formData.name, formData.message);
+      alert("Message sent successfully! I'll get back to you within 24 hours.");
     } catch (exception) {
       console.log("Error handling submit", exception);
+      alert("Error sending your message, Please try again in a while");
     } finally {
       setFormData({ name: "", email: "", message: "" });
       setLoading(false);
-      alert("Message sent successfully! I'll get back to you within 24 hours.");
     }
   };
 
