@@ -68,7 +68,7 @@ const Contact = () => {
     try {
       e.preventDefault();
       console.log("Form submitted:", formData);
-      sendEmail(formData.email, formData.name, formData.message);
+      await sendEmail(formData.email, formData.name, formData.message);
       alert("Message sent successfully! I'll get back to you within 24 hours.");
     } catch (exception) {
       console.log("Error handling submit", exception);
